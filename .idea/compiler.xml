@@ -11,10 +11,6 @@
         <module name="TokenDemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SecurityQuickStart" target="1.8" />
-      <module name="TokenDemo" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
