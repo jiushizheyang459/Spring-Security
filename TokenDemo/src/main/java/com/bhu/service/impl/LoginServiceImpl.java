@@ -24,6 +24,7 @@ public class LoginServiceImpl implements LoginService {
     private AuthenticationManager authenticationManager;
     @Autowired
     private RedisCache redisCache;
+    private UsernamePasswordAuthenticationToken authenticationToken;
 
     @Override
     public ResponseResult login(User user) {

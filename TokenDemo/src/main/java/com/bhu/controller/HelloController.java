@@ -1,5 +1,6 @@
 package com.bhu.controller;
 
+import com.bhu.domain.ResponseResult;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @RequestMapping("/hello")
-    @PreAuthorize("hasAuthority('test')")
+    @PreAuthorize("hasAuthority('system:dept:list11')")
     public String hello(){
         return "hello";
+    }
+
+    @RequestMapping("/testCors")
+    public ResponseResult testCors(){
+        return new ResponseResult<>(200, "testCors");
     }
 }

@@ -79,8 +79,8 @@ public class JwtUtil {
     }
 
     public static void main(String[] args) throws Exception {
-        String jwt = createJWT("2123");
-        Claims claims = parseJWT("eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhYjNhZGEzZGExMTc0ZDM3OTJhZmU3ZDQyZDY1ZTUxZCIsInN1YiI6IjIiLCJpc3MiOiJzZyIsImlhdCI6MTcxOTc0NDIzMiwiZXhwIjoxNzE5NzQ3ODMyfQ.FpuveQzv2X3zK_lgMCfPr-tSxYzRX7LZGCrRckMGovw");
+        String jwt = createJWT("1234");
+        Claims claims = parseJWT("eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4OTAxOTY1ODdkODg0ZjE0OGY3MmNlMDZmMzNhZTg4ZCIsInN1YiI6IjIiLCJpc3MiOiJzZyIsImlhdCI6MTczMzkxMzUyMywiZXhwIjoxNzMzOTE3MTIzfQ.DpRroKZIi51v_Ad4HyqiCSkL0X7GxLamH5OKcNQKxQo");
         String subject = claims.getSubject();
         System.out.println(subject);
 //        System.out.println(claims);
