@@ -2,6 +2,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+../SecurityQuickStart/target/
+./target/
 
 ### IntelliJ IDEA ###
 
@@ -36,6 +38,3 @@ build/
 ### Mac OS ###
 .DS_Store
 ../DS_Store
-
-### 排除不需要的模块 ###
-../SecurityQuickStart/
